@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    padding: 15px 0;
+}
+
+header h2,
+.banner h3 {
+    font-weight: 300;
+}
+
+header h2 {
+    max-width: 600px;
+}
+
+.banner {
+    padding: 10px 0;
+    background-color: #ecf0f1;
+}
+
+.banner h3 {
+    text-align: center;
+}
+
+
+/*form styles*/
+
+#msform {
+    width: 450px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
+#msform fieldset {
+    background: white;
+    border: none;
+    border-top: 4px solid #16ad0e;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.18);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+#msform label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+/*Hide all except first fieldset*/
+
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+
+/*inputs*/
+
+#msform input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+#msform select {
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+
+
+/*buttons*/
+
+input[type="button"]:disabled,
+input[type="submit"]:disabled {
+    background: gray !important;
+}
+
+#msform small {
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#msform .action-button {
+    background: #16ad0e;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#msform .submit.action-button {
+    bottom: -50%;
+}
+
+#msform input[type="submit"] {
+    background-image: url('../right-arrow.png') !important;
+    background-size: contain!important;
+    background-position: 100%!important;
+    background-repeat: no-repeat!important;
+}
+
+
+/*Footer*/
+
+footer {
+    margin-top: 100px;
+    border-top: 1px solid #ecf0f1;
+    text-align: center;
+}
+
+footer p {
+    margin: 15px 0;
+}
+
+footer a {
+    color: initial;
+    text-decoration: none;
+}
+
+footer p:nth-child(2) {
+    padding: 0 15px;
+    ;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
